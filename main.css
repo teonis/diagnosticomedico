@@ -55,4 +55,572 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   } 
+:root {
+    --main-color: #008080;
+    --dark-color: #008000;
+    --light-color: #f0f0f0;
+    --transition-speed: 0.3s;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .banner {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+    opacity: 0; /* Start with elements hidden */
+    animation: fadeInUp 1s 0.5s ease forwards; /* 0.5s delay makes it sequential */
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-start {
+    background-color: var(--dark-color);
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform var(--transition-speed); /* Transition for hover effect */
+  }
+  
+  .btn-start:hover {
+    transform: translateY(-3px); /* Move slightly up on hover */
+  }
+  
+  .btn-start:focus {
+    outline: 2px solid var(--main-color);
+    background-color: var(--main-color);
+  }
+  
+  .features {
+    margin: 2rem 0;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s 1s ease forwards; /* Appears after banner animations */
+  }
+  
+  .features h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .features ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features li {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--light-color);
+    display: flex;
+    align-items: center;
+  }
+  
+  .features li i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: var(--main-color);
+  }
+  
+  :root {
+    --main-color: #006400; /* verde escuro */
+    --light-color: #90ee90; /* verde claro */
+  }
+  
+  .testimonials {
+    margin: 2rem 0;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s 1s ease forwards; /* Appears after features animations */
+  }
+  
+  .testimonials h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonials p {
+    font-size: 1.2rem;
+    color: var(--main-color);
+  }
+  
+  .testimonials .testimonial {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .testimonials .testimonial i {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--main-color);
+  }  
+  
+  /* Animation Keyframes */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+  }
+  
+  @keyframes fadeIn { /* Simple opacity fade-in */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  h1 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    opacity: 0; /* Initial state for fade-in */
+    animation: fadeIn 1s ease-in forwards; /* Animates opacity when element appears */
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  
+  input {
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Transition for border color change on focus */
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #008080; /* verde */
+  }
+  
+  button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #008080; /* verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for background color change on hover */
+  }
+  
+  button:hover {
+    background-color: #008000; /* verde mais escuro */
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  h1 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    opacity: 0; /* Initial state for fade-in */
+    animation: fadeIn 1s ease-in forwards; /* Animates opacity when element appears */
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  
+  ul li {
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+  }
+  
+  ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+  
+  ul li a:hover {
+    background-color: #ddd; /* Lighten background on hover */
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    opacity: 0; /* Initial state for fade-in */
+    animation: fadeIn 1s ease-in forwards; /* Animates opacity when element appears */
+  }
+  
+  form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Transition for border color change */
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #008080; 
+  }
+  
+  button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem; 
+    background-color: #008080; /* verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for background color change */
+  }
+  
+  button:hover {
+    background-color: #008000; /* verde mais escuro */
+  }
+  
+  p {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  a {
+    color: #008080; /* verde */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Start invisible */
+    }
+    to {
+      opacity: 1; /* End fully visible */
+    }
+  }
+  .container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  h1 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    opacity: 0; /* Initial state for fade-in */
+    animation: fadeIn 1s ease-in forwards; /* Animates opacity when element appears */
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  
+  input {
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Transition for border color change on focus */
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #008080; /* verde */
+  }
+  
+  button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #008080; /* verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for background color change on hover */
+  }
+  
+  button:hover {
+    background-color: #008000; /* verde mais escuro */
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  h1 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    opacity: 0; /* Initial state for fade-in */
+    animation: fadeIn 1s ease-in forwards; /* Animates opacity when element appears */
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  h1 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    opacity: 0; /* Initial state for fade-in */
+    animation: fadeIn 1s ease-in forwards; /* Animates opacity when element appears */
+  }
+  
+  form {
+    margin-top: 2rem;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease; /* Transition for border color change on focus */
+  }
+  
+  textarea:focus {
+    border-color: #008080; /* verde */
+  }
+  
+  button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #008080; /* verde */
+    border-radius: 5px;
+    color: #fff;
+    background-color: #008080; /* verde */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for background color and color change on hover */
+  }
+  
+  button:hover {
+    background-color: #006060; /* verde escuro */
+    color: #f0f0f0; /* branco */
+  }
+  
+  .error {
+    color: #ff0000; /* vermelho */
+    margin-top: 1rem;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
   
