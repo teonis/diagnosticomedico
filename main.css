@@ -622,5 +622,59 @@ body {
       opacity: 1;
     }
   }
+  /* recursos */
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  h1 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    opacity: 0; /* Initial state for fade-in */
+    animation: fadeIn 1s ease-in forwards; /* Animates opacity when element appears */
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease; /* Transition for background color change on hover */
+  }
+  
+  li:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #008080; /* verde */
+    transition: color 0.3s ease; /* Transition for color change on hover */
+  }
+  
+  a:hover {
+    color: #006060; /* verde escuro */
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   
   
