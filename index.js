@@ -78,4 +78,25 @@ const Home = () => {
 
 export default Home;
 
+const versiculos = [
+  "João 3:16 - Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna.",
+  "Mateus 6:33 - Mas buscai primeiro o reino de Deus, e a sua justiça, e todas estas coisas vos serão acrescentadas.",
+  "Salmos 23:1 - O Senhor é o meu pastor, nada me faltará.",
+  "Provérbios 3:5 - Confia no Senhor de todo o teu coração, e não te estribes no teu próprio entendimento.",
+  "Efésios 2:8 - Porque pela graça sois salvos, por meio da fé; e isto não vem de vós, é dom de Deus.",
+];
+
+const gerarVersiculoAleatorio = () => {
+  const indiceAleatorio = Math.floor(Math.random() * versiculos.length);
+  return versiculos[indiceAleatorio];
+};
+
+const mostrarVersiculo = () => {
+  const versiculoAleatorio = gerarVersiculoAleatorio();
+  const elementoVersiculo = document.getElementById("versiculo-aleatorio");
+  elementoVersiculo.innerHTML = `<p class="text-center">${versiculoAleatorio}</p>`;
+};
+
+mostrarVersiculo();
+
 
