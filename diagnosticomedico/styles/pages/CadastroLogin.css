@@ -1,0 +1,82 @@
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    opacity: 0; /* Initial state for fade-in */
+    animation: fadeIn 1s ease-in forwards; /* Animates opacity when element appears */
+  }
+  
+  form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Transition for border color change */
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #008080; 
+  }
+  
+  button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem; 
+    background-color: #008080; /* verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for background color change */
+  }
+  
+  button:hover {
+    background-color: #008000; /* verde mais escuro */
+  }
+  
+  p {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  a {
+    color: #008080; /* verde */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Start invisible */
+    }
+    to {
+      opacity: 1; /* End fully visible */
+    }
+  }
+  
